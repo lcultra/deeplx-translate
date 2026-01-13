@@ -1,4 +1,4 @@
-# deepl-translate README
+# deeplx-translate README
 
 The plugin provides a translation source for the ‘comment-translate’ plugin. Itself does not activate, it starts when enabled is selected.
 
@@ -14,7 +14,7 @@ Please install '[comment-translate](https://github.com/intellism/vscode-comment-
 ## Use
 1. After installation, call the "Change translation source" command of "Comment Translate"
     ![change](./image/change.png)
-2. Check "Deepl translate" to configure the plugin API Key
+2. Check "Deeplx translate" to configure the plugin API Key
     ![select](./image/select.png)
 3. Directly use the "Comment Translate" interactive mode to translate the corresponding text
 
@@ -22,10 +22,10 @@ Please install '[comment-translate](https://github.com/intellism/vscode-comment-
 
 This extension contributes the following settings:
 
-* `deeplTranslate.apiFree`: Whether it is a free API
-* `deeplTranslate.authKey`: set to `authKey` to request
-* `deeplTranslate.preserveFormatting`: Sets whether the translation engine should respect the original formatting, even if it would usually correct some aspects. [More](https://www.deepl.com/zh/docs-api/translating-text/request/
-* `deeplTranslate.formality`: Sets whether the translated text should lean towards formal or informal language. [More](https://www.deepl.com/zh/docs-api/translating-text/request/)
+* `deeplxTranslate.apiFree`: Whether it is a free API
+* `deeplxTranslate.authKey`: set to `authKey` to request
+* `deeplxTranslate.preserveFormatting`: Sets whether the translation engine should respect the original formatting, even if it would usually correct some aspects. [More](https://www.deeplx.com/zh/docs-api/translating-text/request/
+* `deeplxTranslate.formality`: Sets whether the translated text should lean towards formal or informal language. [More](https://www.deeplx.com/zh/docs-api/translating-text/request/)
 
 ## Known Issues
 

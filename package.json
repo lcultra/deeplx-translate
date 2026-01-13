@@ -1,7 +1,7 @@
 {
-  "name": "deepl-translate",
-  "displayName": "deepl-translate",
-  "description": "deepl translate source for comment-translate",
+  "name": "deeplx-translate",
+  "displayName": "deeplx-translate",
+  "description": "deeplx translate source for comment-translate",
   "version": "0.0.2",
   "publisher": "intellsmi",
   "engines": {
@@ -13,19 +13,19 @@
   "keywords": [
     "translateSource",
     "comment translate",
-    "deepl",
-    "deepl translate",
+    "deeplx",
+    "deeplx translate",
     "翻译",
     "注释",
     "翻訳"
   ],
-  "homepage": "https://github.com/intellism/deepl-translate#readme",
+  "homepage": "https://github.com/intellism/deeplx-translate#readme",
   "bugs": {
-    "url": "https://github.com/intellism/deepl-translate/issues"
+    "url": "https://github.com/intellism/deeplx-translate/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/intellism/deepl-translate.git"
+    "url": "https://github.com/intellism/deeplx-translate.git"
   },
   "activationEvents": [],
   "main": "./out/extension.js",
@@ -36,44 +36,20 @@
   "contributes": {
     "configuration": [
       {
-        "title": "DeepL translate Configuration",
+        "title": "DeepLX translate Configuration",
         "type": "Object",
         "properties": {
-          "deeplTranslate.apiFree": {
-            "type": "boolean",
-            "description": "apiFree",
-            "default": true
-          },
-          "deeplTranslate.authKey": {
+          "deeplxTranslate.apiUrl": {
             "type": "string",
-            "markdownDescription": "You need an authentication key to access to the API.[Accessing the API](https://www.deepl.com/zh/docs-api/accessing-the-api/)"
-          },
-          "deeplTranslate.preserveFormatting": {
-            "type": "string",
-            "enum": [
-              "0",
-              "1"
-            ],
-            "default": "0",
-            "markdownDescription": "Sets whether the translation engine should respect the original formatting, even if it would usually correct some aspects. [More](https://www.deepl.com/zh/docs-api/translating-text/request/)"
-          },
-          "deeplTranslate.formality": {
-            "type": "string",
-            "enum": [
-              "default",
-              "more",
-              "less"
-            ],
-            "default": "default",
-            "markdownDescription": "Sets whether the translated text should lean towards formal or informal language. [More](https://www.deepl.com/zh/docs-api/translating-text/request/)"
+            "markdownDescription": "by linux.do https://nav.linux.do/"
           }
         }
       }
     ],
     "translates": [
       {
-        "translate": "deepl",
-        "title": "DeepL translate"
+        "translate": "deeplx",
+        "title": "DeepLX translate"
       }
     ]
   },
