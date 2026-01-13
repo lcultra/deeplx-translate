@@ -64,9 +64,6 @@ export class DeepLXTranslate implements ITranslate {
         if(!this._defaultOption.apiUrl) {
             throw new Error('请前往设置填写apiUrl');
         }
-        if (to !== 'zh-CN') {
-            return `${content}|仅支持翻译成中文`;
-        }
         const url = this._defaultOption.apiUrl;        
         const data = {
             text: content,
@@ -81,8 +78,7 @@ export class DeepLXTranslate implements ITranslate {
         if (res.data.code !== 200) {
             throw new Error('Server error!');
         }
-
-        return from + to + res.data.data;
+        return res.data.data ?? content;
     }
 
 
