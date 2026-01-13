@@ -22,7 +22,7 @@ Please install '[comment-translate](https://github.com/intellism/vscode-comment-
 
 This extension contributes the following settings:
 
-* `deeplxTranslate.apiUrl`: by linux.do linux.do
+* `deeplxTranslate.apiUrl`: by linux.do
 
 ## Known Issues
 
